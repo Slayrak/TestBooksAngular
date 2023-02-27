@@ -1,0 +1,24 @@
+.EditForm{
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.for-form {
+    display: flex;
+}
+
+.book-content {
+    display: flex;
+    width: 50%;
+}
+
+.form-itself {
+    display: flex;
+    width: 50%;
+}
