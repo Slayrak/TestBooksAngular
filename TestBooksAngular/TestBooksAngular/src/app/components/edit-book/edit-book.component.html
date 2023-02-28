@@ -1,0 +1,53 @@
+<div class="EditForm" style="
+border-color: black;
+border: 3px;
+border-style: solid;">
+    <p style="margin-left: 15px">Add Book</p>
+    <hr size="5" width="90%" color="black" style="margin: auto; margin-bottom: 10px;">
+    <div class="for-form">
+        <div class="form-itself">
+            <form style="width:100%">
+                <div class="form-group row">
+                    <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="inputTitle">
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label for="inputCover" class="col-sm-2 col-form-label">Cover</label>
+                  <div class="col-sm-5">
+                    <div class="input-group">
+                      <div class="custom-file" style="border: 1px; border-color: grey; border-style: solid;">
+                        <input type="file" accept="image/*" class="custom-file-input" id="inputGroupFile04" style="Width:100%"> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputGenre" class="col-sm-2 col-form-label">Genre</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="inputGenre">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="inputAuthor">
+                    </div>
+                  </div>
+            </form>
+        </div>
+        <div class="book-content">
+            <form style="width: 100%;">
+                <div class="form-group">
+                  <label for="content">Content</label>
+                  <textarea class="form-control" id="contentTextArea" rows="3"></textarea>
+                </div>
+              </form>
+        </div>
+    </div>
+    <div class="send-buttons">
+      <button type="button" class="btn btn-outline-primary" style="margin-right:15px" (click)="AddBook()">Add</button>
+      <button type="button" class="btn btn-outline-warning" (click)='Clear()'>Clear</button>
+    </div>
+</div>
