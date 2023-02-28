@@ -9,6 +9,14 @@ import { BooksListItemComponent } from './components/books-list-item/books-list-
 import { EditBookComponent } from './components/edit-book/edit-book.component';
 import { ViewBookComponent } from './components/view-book/view-book.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatTabsModule} from '@angular/material/tabs';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatDialogModule} from '@angular/material/dialog';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +30,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+    ScrollingModule,
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

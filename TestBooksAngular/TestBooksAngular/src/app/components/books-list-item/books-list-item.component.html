@@ -1,1 +1,21 @@
-<p>books-list-item works!</p>
+<div class="card mb-2" style="display:flex; flex-direction:row;">
+    <div style="display:flex; align-items: center; width: 175px; justify-content: center;">
+        <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
+        AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+            9TXL0Y4OHwAAAABJRU5ErkJggg==" class="card-img-left" alt="..." style="max-height: 150px; max-width: 150px; min-width: 150px; min-height: 150px;">
+    </div>
+    <div class="col-md-5">
+        <div class="card-body">
+            <h1 class="card-title">{{ book.title }}</h1>
+            <p class="card-text">Author: {{ book.author }}</p>
+            <p class="card-text">Rating: {{ book.rating }}</p>
+            <p class="card-text">Number of reviews: {{ book.reviewsNumber }}</p>
+        </div>
+    </div>
+    <div style="display: flex; justify-content:center; align-items:center; width: 200px">
+        <div class="btn-group" role="group" aria-label="Basic example" style="height:20%; width: 100%">
+            <a type="button" class="btn btn-outline-dark">View </a>
+            <a type="button" class="btn btn-outline-dark">Edit </a>
+        </div>
+    </div>
+</div>

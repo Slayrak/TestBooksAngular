@@ -1,1 +1,18 @@
-<p>books-list works!</p>
+<div class="lists">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab label="All">
+        <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+            <div *cdkVirtualFor="let item of books" class="example-item">
+                <app-books-list-item [book]="item"></app-books-list-item>
+            </div>
+          </cdk-virtual-scroll-viewport>
+      </mat-tab>
+      <mat-tab label="Recommended">
+        <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+            <div *cdkVirtualFor="let item of recommendedBooks" class="example-item">
+                <app-books-list-item [book]="item"></app-books-list-item>
+            </div>
+          </cdk-virtual-scroll-viewport>
+      </mat-tab>
+    </mat-tab-group>
+</div>
